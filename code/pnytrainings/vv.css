@@ -1,0 +1,70 @@
+.card-box{
+    border: 1px solid transparent;
+    width: 100%;
+    height: 850px;
+    background-color:#d8f2f9!important;
+    position: relative;
+    top: 161px;
+
+
+}
+.h{
+    position: relative;
+    left: 954px;
+    top:33px;
+   font-size: 45px;
+ font-family: 'Roboto', sans-serif;;
+ }
+ .card1{
+  width: 625px;
+  height: 250px;
+  background-color:white;
+  position:absolute;
+  top: 200px;
+  left: 60px;
+ }
+ .card2{
+    width: 625px;
+    height: 250px;
+    background-color:white;
+    position:absolute;
+    top: 200px;
+    left: 729px;
+   
+   }
+   .card3{
+    width: 625px;
+    height: 250px;
+    background-color:white;
+    position:absolute;
+    top: 200px;
+    left: 1400px;
+    padding: 5px;
+   }
+   .card4{
+    width: 625px;
+    height: 250px;
+    background-color:white;
+    position:absolute;
+    top: 500px;
+    left: 1400px;
+   
+   }
+   .card5{
+    width: 625px;
+    height: 250px;
+    background-color:white;
+    position:absolute;
+    top: 500px;
+    left: 729px;
+    padding: 5px;
+   }
+   .card6{
+    width: 625px;
+    height: 250px;
+    background-color:white;
+    position:absolute;
+    top: 500px;
+    left: 59px;
+    padding: 5px;
+   }

@@ -1,0 +1,45 @@
+*{
+    margin:  0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.card{
+    height: 40vh;
+    width: 20%;
+    background-color: black;
+    margin: 0 auto;
+}
+.card-image{
+      height: 20vh;
+      background-image: url(imageback/henry-be-lc7xcWebECc-unsplash.jpg);
+      background-size:cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+}
+.card-body{
+    height: 20vh;
+  
+}
+.heading{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.desc{
+    padding: 5px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px;
+    text-align: justify;
+}
+.btn{
+    background-color: red;
+    color: white;
+    padding: 20px;
+    border-radius: 10px 20px;
+    border: 1px solid transparent;
+    font-weight: bold;
+    
+
+}
