@@ -1,11 +1,9 @@
 *{
- padding: 0px;
- margin: 0px;
- box-sizing: border-box;
- list-style-type: none;
- overflow-x: hidden;
-}
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
 
+}
 .top-header{
     display: flex;
     justify-content: center;
@@ -27,6 +25,7 @@
     display: flex;
     justify-content: space-between;
     align-items:center;
+    flex-wrap: wrap;
     margin: 10px;
 }
 .nav-bar  img{
@@ -35,8 +34,10 @@
 }
 .nav-bar .nav-link ul{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    list-style-type: none;
 }
  
 
@@ -65,45 +66,38 @@
     display: flex;
 
 }
-body {
-    position: relative;
-    height: 100%;
-  }
 
-  body {
-    background: #eee;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color: #000;
-    margin: 0;
-    padding: 0;
-  }
+.swiper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 15px;
+}
 
-  .swiper {
-    width: 100%;
-    height: 100%;
-  }
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-
-
-
+.swiper-slide img {
+  
+  width: 100%;
  
+  object-fit: cover;
+  height: 100%;;
+}
+
   
 .sale{
     display: flex;
@@ -111,6 +105,7 @@ body {
     gap: 15px;
     margin-top: 0px;
     margin-left: 10px;
+   
 
 }
 .sale img{
@@ -123,59 +118,140 @@ body {
 
 .fabrics{
     width: 100%;
+    height: auto;
     display: flex;
-    gap: 100px;
-    margin-top: 10px;
-    margin-left:5px ;
+    justify-content:space-around;
+    padding-right: 40px;
+    border: 1px solid transparent;
+
+  
 }
 .fabrics  img{
     width: 100%;
-    display: block;
-    object-fit: cover;
+    height: 100%;
+   object-fit: cover;
+   display: block;
+    
+    
+   
+   
+  
+}
+.fabrics > .cards{
+   width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: row;
+   gap: 50px;
+   font-size: 30px;
+   border: 1px solid red;
+  text-transform: capitalize;
 }
 
-.slider{
-   
+.fabrics .swiper{
+    width:640px;
+    height: 100%;
 display: flex;
 
-margin-top: 20px;
- margin-right: 60px;
-  gap: 20px;
-    
+
+
 }
-.slider > .card{
+ .swiper  .swiper-slide{
+    display: flex;
+    
+    align-items: flex-start;
+   
+   
+   
+}
+.swiper-slide > .card img{
+    width: 100%;
+    
+    object-fit: cover;
+}
+.swiper-slide > .card button{
+    width: 288px;
+    padding: 2px 5px;
+    border: none;
+   
+}
+.swiper-slide >.card button a{
+ text-decoration: none;
+ color: #000;
+ font-size: 17px;
+
+}
+.swiper-slide >.card button a:hover{
+   background-color: black;
+    
+    color: white;
+   
+   }
+
+.swiper-slide >.card  .card-body{
+    display: flex;
+   align-items: flex-start;
+    flex-direction: column;
+    gap:6px;
+    font-size: 17px;
+   
+}
+.card .card-body .heading{
+    font-weight: bold;
+}
+.fabrics1{
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 117px;
+ 
+ justify-content: space-between;
+ 
+    border: 1px solid red;
+  
+}
+.fabrics1  img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+   
+   
+  
+}
+
+.fabrics1 > .cards{
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    font-size: 18px;
-    color: #777;
-    border: 1px solid transparent;
-    
-
-}
-.slider > .card .first{
-    width: 313px;
-    height: 30px;
-    border: none;
-    font-size: 15px;
-    padding: 0px;
-    text-align: center;
-}
-.slider >.card button:hover{
-    background-color: black;
-    color: white;
+   padding-top: px;
+   gap: 30px;
+   font-size: 30px;
+   padding-left: 60px;
+   border: 1px solid transparent;
+  text-transform: capitalize;
 }
 
-.slider .heading{
-    color: black;
+.fabrics1 .swiper{
+    width:600px;
+    height: 90%;
+   
+ 
+ border: 1px solid transparent;
+display: flex;
+
+
+
 }
-.fabrics > .fabrics2{
-    margin-right:70px;
-}
+
+
+
+
 .footer{
   display: flex;
   justify-content:space-around;
   align-items: center;
+  flex-wrap: wrap;
  
   padding-top: 30px;
   padding-bottom: 20px;
@@ -187,6 +263,7 @@ margin-top: 20px;
 }
 .footer1{
     display: flex;
+   
     gap: 20px;
 }
 .footer  .para-footer{
@@ -194,12 +271,14 @@ margin-top: 20px;
 }
 .footer-adds{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     padding-top: 30px;
 }
 .info{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     gap: 10px;
     width: 350px;
@@ -216,6 +295,7 @@ margin-top: 20px;
 }
 .footer-search{
     display: flex;
+   
 }
 .footer-search input{
     width: 400px;
@@ -231,6 +311,7 @@ margin-top: 20px;
 }
 .footer-social{
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     align-items: center;
 }
@@ -238,14 +319,16 @@ margin-top: 20px;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-   
+   flex-wrap: wrap;
     margin-top: 60px;
    
     
 }
 .footer-info1{
     width: 220px;
+    flex-wrap: wrap;
     display: flex;
+   
     flex-direction: column;
     gap: 10px;
 }
@@ -263,13 +346,17 @@ margin-top: 20px;
 
 .footer-company{
     display: flex;
+  flex-wrap: wrap;
     flex-direction: column;
     gap: 15px;
 }
+
 .footer-company .links ul{
  display: flex;
+ flex-wrap: wrap;
  flex-direction: column;
  gap: 10px;
+ list-style-type: none;
 }
 .footer-company .links ul li a:hover{
     text-decoration: underline;
@@ -285,12 +372,14 @@ margin-top: 20px;
 .final-footer{
    
     display: flex;
-    justify-content:space-evenly;
+     flex-wrap: wrap;
+    justify-content:space-between;
     margin-top:40px ;
 }
 
 .final-footer .final{
     display: flex;
+   flex-wrap: wrap;
     flex-direction: column;
 }
  .final img{
@@ -299,4 +388,52 @@ margin-top: 20px;
 }
 .final .logo{
     width:70px;
+
 }
+@media only screen and (max-width: 1073px) {
+   .footer-adds{
+        
+      gap: 30px;
+    }
+  }
+  @media only screen and (max-width: 1045px) {
+    .final-footer{
+   gap: 30px;
+   justify-content: flex-start;
+    }
+   }
+@media only screen and (max-width: 865px) {
+    .footer{
+      
+       
+       gap: 30px;
+       justify-content: center;
+      
+      }
+  }
+  @media only screen and (max-width:595px) {
+    .footer-info{
+   gap: 50px;
+
+   
+    
+}
+  }
+
+
+  @media only screen and (max-width:518px) {
+    .footer-search input{
+        width: 240px;
+       
+    }
+    .footer-search  button{
+        width: 70px;
+        font-size: 14px;
+        
+  }
+  @media only screen and (max-width:368px) {
+    .footer-search input{
+        width: 180px;
+       
+    }
+  }
