@@ -70,11 +70,8 @@
     filter: brightness(50%);
     cursor: pointer;
 }
-.fabrics{
-    display: flex;
-   
-    gap: 30px;
-}
+
+
 .swiper {
     width: 100%;
     height: 100%;
@@ -110,7 +107,11 @@
     width: 50%;
     padding-left: 10px;
 }
-
+.fabrics{
+    display: flex;
+   
+    gap: 30px;
+}
 .fabrics .box img{
     width: 100%;
     height: 100%;
@@ -137,7 +138,7 @@
     font-size: 18px;
     
     display: flex;
-    flex-wrap: wrap;
+  
     justify-content: center;
     align-items: center;
   }
@@ -156,7 +157,7 @@
  
 .fabrics  .swiper .card-body{
     display: flex;
-    flex-wrap: wrap;
+   
   flex-direction: column;   
   align-items: flex-start;
   color: #777;
@@ -323,6 +324,21 @@
      justify-content: flex-start;
       }
      }
+     @media only screen and (max-width: 980px) {
+        .fabrics{
+            flex-wrap: wrap;
+        }
+        .fabrics .box{
+            width: 98%;
+            padding-left: 10px;
+        }
+        .fabrics  >.heading{
+          
+             
+             width: 90%;
+          
+           }
+    }
   @media only screen and (max-width: 865px) {
       .footer{
         
